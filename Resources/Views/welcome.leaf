@@ -1,10 +1,15 @@
 #extend("base")
 
-#export("title") { It works }
+#export("title") { Bootstrap Provider Examples }
 
 #export("content") {
-	<div class="welcome">
-		<img src="/images/it-works.png">
-	</div>
+
+
+    #container() {
+        #row() {
+        <h1>Bootstrap Provider Examples</h1>
+        }
+    }
+
 }
 

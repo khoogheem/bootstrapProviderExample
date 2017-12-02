@@ -1,0 +1,68 @@
+#extend("base")
+
+#export("title") { Layout Examples }
+
+#export("content") {
+
+<h1 >Layout Examples</h1>
+<p>
+<br>
+
+<br>
+<b> Container:</b>
+<hr>
+<pre>
+#raw(){
+    #container:fluid() {
+        put your html here.. or other leaf tags
+        #button:primary("Primary")
+    }
+}
+</pre>
+
+<br>
+<b> Container - Fluid:</b>
+<hr>
+<pre>
+    #raw(){
+    #container:fluid() {
+        put your html here.. or other leaf tags
+        #button:primary("Primary")
+    }
+    }
+</pre>
+
+<br>
+<b> Row:</b>
+<hr>
+
+<p>
+<pre>
+#raw(){
+#row() {
+    #button:primary("Primary")
+}
+}
+</pre>
+</p>
+
+<br>
+<b> Row:</b>
+<hr>
+
+#row("justify-content-md-center") {
+    Centered row
+}
+
+<p>
+<pre>
+#raw(){
+#row("justify-content-md-center") {
+    Centered row
+}
+}
+</pre>
+</p>
+
+
+}

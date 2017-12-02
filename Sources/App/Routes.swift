@@ -12,14 +12,19 @@ final class Routes: RouteCollection {
             return try self.view.make("welcome")
         }
 
-        /// GET /hello/...
-        builder.resource("hello", HelloController(view))
-
-        // response to requests to /info domain
-        // with a description of the request
-        builder.get("info") { req in
-            return req.description
+        builder.get("layout") { (req: Request) -> ResponseRepresentable in
+            return try self.view.make("layout")
         }
+        builder.get("alerts") { (req: Request) -> ResponseRepresentable in
+            return try self.view.make("alerts")
+        }
+        builder.get("buttons") { (req: Request) -> ResponseRepresentable in
+            return try self.view.make("buttons")
+        }
+        builder.get("button_group") { (req: Request) -> ResponseRepresentable in
+            return try self.view.make("button_group")
+        }
+
 
     }
 }

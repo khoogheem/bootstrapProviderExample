@@ -11,9 +11,10 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/vapor/vapor.git", .upToNextMajor(from: "2.2.0")),
         .package(url: "https://github.com/vapor/leaf-provider.git", .upToNextMajor(from: "1.1.0")),
+        .package(url: "https://github.com/khoogheem/BootstrapProvider", from: "0.5.0"),
     ],
     targets: [
-        .target(name: "App", dependencies: ["Vapor", "LeafProvider"],
+        .target(name: "App", dependencies: ["Vapor", "LeafProvider", "BootstrapProvider"],
                exclude: [
                    "Config",
                    "Database",

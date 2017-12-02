@@ -1,0 +1,355 @@
+#extend("base")
+
+#export("title") { Buttons Examples }
+
+#export("content") {
+
+<h1>Buttons Examples</h1>
+<p>
+Use Bootstrap's custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more
+</p>
+<br>
+<b> Buttons:</b>
+<hr>
+
+#button:primary("Primary")
+#button:secondary("Secondary")
+#button:success("Success")
+#button:danger("Danger")
+#button:warning("Warning")
+#button:info("Info")
+#button:light("Light")
+#button:dark("Dark")
+#button:link("Link")
+
+<p>
+<pre>
+#raw(){
+#button:primary("Primary")
+#button:secondary("Secondary")
+#button:success("Success")
+#button:danger("Danger")
+#button:warning("Warning")
+#button:info("Info")
+#button:light("Light")
+#button:dark("Dark")
+#button:link("Link")
+}
+</pre>
+</p>
+
+<br>
+<b> Buttons - Large:</b>
+<hr>
+
+#button:large:primary("Primary")
+#button:large:secondary("Secondary")
+#button:large:success("Success")
+#button:large:danger("Danger")
+#button:large:warning("Warning")
+#button:large:info("Info")
+#button:large:light("Light")
+#button:large:dark("Dark")
+#button:large:link("Link")
+
+<p>
+<pre>
+#raw(){
+#button:large:primary("Primary")
+#button:large:secondary("Secondary")
+#button:large:success("Success")
+#button:large:danger("Danger")
+#button:large:warning("Warning")
+#button:large:info("Info")
+#button:large:light("Light")
+#button:large:dark("Dark")
+#button:large:link("Link")
+}
+</pre>
+</p>
+
+
+<br>
+<b> Buttons - Small:</b>
+<hr>
+
+#button:small:primary("Primary")
+#button:small:secondary("Secondary")
+#button:small:success("Success")
+#button:small:danger("Danger")
+#button:small:warning("Warning")
+#button:small:info("Info")
+#button:small:light("Light")
+#button:small:dark("Dark")
+#button:small:link("Link")
+
+<p>
+<pre>
+#raw(){
+#button:small:primary("Primary")
+#button:small:secondary("Secondary")
+#button:small:success("Success")
+#button:small:danger("Danger")
+#button:small:warning("Warning")
+#button:small:info("Info")
+#button:small:light("Light")
+#button:small:dark("Dark")
+#button:small:link("Link")
+}
+</pre>
+</p>
+
+<br>
+<b> Outline:</b>
+<hr>
+
+#button:outline:primary("Primary")
+#button:outline:secondary("Secondary")
+#button:outline:success("Success")
+#button:outline:danger("Danger")
+#button:outline:warning("Warning")
+#button:outline:info("Info")
+#button:outline:light("Light")
+#button:outline:dark("Dark")
+
+<p>
+<pre>
+#raw(){
+#button:outline:primary("Primary")
+#button:outline:secondary("Secondary")
+#button:outline:success("Success")
+#button:outline:danger("Danger")
+#button:outline:warning("Warning")
+#button:outline:info("Info")
+#button:outline:light("Light")
+#button:outline:dark("Dark")
+}
+</pre>
+</p>
+
+<br>
+<b> Outline Large:</b>
+<hr>
+
+#button:outline:large:primary("Primary")
+#button:outline:large:secondary("Secondary")
+#button:outline:large:success("Success")
+#button:outline:large:danger("Danger")
+#button:outline:large:warning("Warning")
+#button:outline:large:info("Info")
+#button:outline:large:light("Light")
+#button:outline:large:dark("Dark")
+
+<p>
+<pre>
+#raw(){
+#button:outline:large:primary("Primary")
+#button:outline:large:secondary("Secondary")
+#button:outline:large:success("Success")
+#button:outline:large:danger("Danger")
+#button:outline:large:warning("Warning")
+#button:outline:large:info("Info")
+#button:outline:large:light("Light")
+#button:outline:large:dark("Dark")
+}
+</pre>
+</p>
+
+<br>
+<b> Outline Small:</b>
+<hr>
+
+#button:outline:small:primary("Primary")
+#button:outline:small:secondary("Secondary")
+#button:outline:small:success("Success")
+#button:outline:small:danger("Danger")
+#button:outline:small:warning("Warning")
+#button:outline:small:info("Info")
+#button:outline:small:light("Light")
+#button:outline:small:dark("Dark")
+
+<p>
+<pre>
+#raw(){
+#button:outline:small:primary("Primary")
+#button:outline:small:secondary("Secondary")
+#button:outline:small:success("Success")
+#button:outline:small:danger("Danger")
+#button:outline:small:warning("Warning")
+#button:outline:small:info("Info")
+#button:outline:small:light("Light")
+#button:outline:small:dark("Dark")
+}
+</pre>
+</p>
+
+<br>
+<b> Button Link:</b>
+<hr>
+
+#link:button:primary("Primary", "http://vapor.codes")
+#link:button:secondary("Secondary", "http://vapor.codes")
+#link:button:success("Success", "http://vapor.codes")
+#link:button:danger("Danger", "http://vapor.codes")
+#link:button:warning("Warning", "http://vapor.codes")
+#link:button:info("Info", "http://vapor.codes")
+#link:button:light("Light", "http://vapor.codes")
+#link:button:dark("Dark", "http://vapor.codes")
+
+<p>
+<pre>
+#raw(){
+#link:button:primary("Primary", "http://vapor.codes")
+#link:button:secondary("Secondary", "http://vapor.codes")
+#link:button:success("Success", "http://vapor.codes")
+#link:button:danger("Danger", "http://vapor.codes")
+#link:button:warning("Warning", "http://vapor.codes")
+#link:button:info("Info", "http://vapor.codes")
+#link:button:light("Light", "http://vapor.codes")
+#link:button:dark("Dark", "http://vapor.codes")
+}
+</pre>
+</p>
+
+<br>
+<b> Button Link Large:</b>
+<hr>
+
+#link:button:large:primary("Primary", "http://vapor.codes")
+#link:button:large:secondary("Secondary", "http://vapor.codes")
+#link:button:large:success("Success", "http://vapor.codes")
+#link:button:large:danger("Danger", "http://vapor.codes")
+#link:button:large:warning("Warning", "http://vapor.codes")
+#link:button:large:info("Info", "http://vapor.codes")
+#link:button:large:light("Light", "http://vapor.codes")
+#link:button:large:dark("Dark", "http://vapor.codes")
+
+<p>
+<pre>
+#raw(){
+#link:button:large:primary("Primary", "http://vapor.codes")
+#link:button:large:secondary("Secondary", "http://vapor.codes")
+#link:button:large:success("Success", "http://vapor.codes")
+#link:button:large:danger("Danger", "http://vapor.codes")
+#link:button:large:warning("Warning", "http://vapor.codes")
+#link:button:large:info("Info", "http://vapor.codes")
+#link:button:large:light("Light", "http://vapor.codes")
+#link:button:large:dark("Dark", "http://vapor.codes")
+}
+</pre>
+</p>
+
+<br>
+<b> Button Link Small:</b>
+<hr>
+
+#link:button:small:primary("Primary", "http://vapor.codes")
+#link:button:small:secondary("Secondary", "http://vapor.codes")
+#link:button:small:success("Success", "http://vapor.codes")
+#link:button:small:danger("Danger", "http://vapor.codes")
+#link:button:small:warning("Warning", "http://vapor.codes")
+#link:button:small:info("Info", "http://vapor.codes")
+#link:button:small:light("Light", "http://vapor.codes")
+#link:button:small:dark("Dark", "http://vapor.codes")
+
+<p>
+<pre>
+#raw(){
+#link:button:small:primary("Primary", "http://vapor.codes")
+#link:button:small:secondary("Secondary", "http://vapor.codes")
+#link:button:small:success("Success", "http://vapor.codes")
+#link:button:small:danger("Danger", "http://vapor.codes")
+#link:button:small:warning("Warning", "http://vapor.codes")
+#link:button:small:info("Info", "http://vapor.codes")
+#link:button:small:light("Light", "http://vapor.codes")
+#link:button:small:dark("Dark", "http://vapor.codes")
+}
+</pre>
+</p>
+
+
+<br>
+<b> Outline Link:</b>
+<hr>
+
+#link:button:outline:primary("Primary", "http://vapor.codes")
+#link:button:outline:secondary("Secondary", "http://vapor.codes")
+#link:button:outline:success("Success", "http://vapor.codes")
+#link:button:outline:danger("Danger", "http://vapor.codes")
+#link:button:outline:warning("Warning", "http://vapor.codes")
+#link:button:outline:info("Info", "http://vapor.codes")
+#link:button:outline:light("Light", "http://vapor.codes")
+#link:button:outline:dark("Dark", "http://vapor.codes")
+
+<p>
+<pre>
+#raw(){
+#link:button:outline:primary("Primary", "http://vapor.codes")
+#link:button:outline:secondary("Secondary", "http://vapor.codes")
+#link:button:outline:success("Success", "http://vapor.codes")
+#link:button:outline:danger("Danger", "http://vapor.codes")
+#link:button:outline:warning("Warning", "http://vapor.codes")
+#link:button:outline:info("Info", "http://vapor.codes")
+#link:button:outline:light("Light", "http://vapor.codes")
+#link:button:outline:dark("Dark", "http://vapor.codes")
+}
+</pre>
+</p>
+
+
+<br>
+<b> Outline Link Large:</b>
+<hr>
+
+#link:button:outline:large:primary("Primary", "http://vapor.codes")
+#link:button:outline:large:secondary("Secondary", "http://vapor.codes")
+#link:button:outline:large:success("Success", "http://vapor.codes")
+#link:button:outline:large:danger("Danger", "http://vapor.codes")
+#link:button:outline:large:warning("Warning", "http://vapor.codes")
+#link:button:outline:large:info("Info", "http://vapor.codes")
+#link:button:outline:large:light("Light", "http://vapor.codes")
+#link:button:outline:large:dark("Dark", "http://vapor.codes")
+
+<p>
+<pre>
+#raw(){
+#link:button:outline:large:primary("Primary", "http://vapor.codes")
+#link:button:outline:large:secondary("Secondary", "http://vapor.codes")
+#link:button:outline:large:success("Success", "http://vapor.codes")
+#link:button:outline:large:danger("Danger", "http://vapor.codes")
+#link:button:outline:large:warning("Warning", "http://vapor.codes")
+#link:button:outline:large:info("Info", "http://vapor.codes")
+#link:button:outline:large:light("Light", "http://vapor.codes")
+#link:button:outline:large:dark("Dark", "http://vapor.codes")
+}
+</pre></p>
+
+<br>
+<b> Outline Link Small:</b>
+<hr>
+
+#link:button:outline:small:primary("Primary", "http://vapor.codes")
+#link:button:outline:small:secondary("Secondary", "http://vapor.codes")
+#link:button:outline:small:success("Success", "http://vapor.codes")
+#link:button:outline:small:danger("Danger", "http://vapor.codes")
+#link:button:outline:small:warning("Warning", "http://vapor.codes")
+#link:button:outline:small:info("Info", "http://vapor.codes")
+#link:button:outline:small:light("Light", "http://vapor.codes")
+#link:button:outline:small:dark("Dark", "http://vapor.codes")
+
+<p>
+<pre>
+#raw(){
+#link:button:outline:small:primary("Primary", "http://vapor.codes")
+#link:button:outline:small:secondary("Secondary", "http://vapor.codes")
+#link:button:outline:small:success("Success", "http://vapor.codes")
+#link:button:outline:small:danger("Danger", "http://vapor.codes")
+#link:button:outline:small:warning("Warning", "http://vapor.codes")
+#link:button:outline:small:info("Info", "http://vapor.codes")
+#link:button:outline:small:light("Light", "http://vapor.codes")
+#link:button:outline:small:dark("Dark", "http://vapor.codes")
+}
+</pre>
+</p>
+
+}

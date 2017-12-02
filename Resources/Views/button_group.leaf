@@ -1,0 +1,171 @@
+#extend("base")
+
+#export("title") { Button Group Examples }
+
+#export("content") {
+
+<h1>Button Groups Examples</h1>
+<p>
+Group a series of buttons together on a single line with the button group, and super-power them with JavaScript
+</p>
+<br>
+<b> Button Group:</b>
+<br>
+#raw(){
+Usage: <pre>#button:group(&lt;aria-label&gt;){}</pre>
+}
+<hr>
+
+#button:group("group-button") {
+#button:primary("Left")
+#button:secondary("Middle")
+#button:success("Right")
+}
+
+<p>
+<pre>
+#raw(){
+#button:group("group-button") {
+    #button:primary("Left")
+    #button:secondary("Middle")
+    #button:success("Right")
+}
+}
+</pre>
+</p>
+
+<br>
+<b> Button Group large:</b>
+<br>
+#raw(){
+Usage: <pre>#button:group:large(&lt;aria-label&gt;){}</pre>
+}
+<hr>
+
+#button:group:large("group-button-lg") {
+#button:primary("Left")
+#button:secondary("Middle")
+#button:success("Right")
+}
+
+<p>
+<pre>
+#raw(){
+#button:group:large("group-button-lg") {
+    #button:primary("Left")
+    #button:secondary("Middle")
+    #button:success("Right")
+}
+}
+</pre>
+</p>
+
+<br>
+<b> Button Group small:</b>
+<br>
+#raw(){
+Usage: <pre>#button:group:small(&lt;aria-label&gt;){}</pre>
+}
+<hr>
+
+#button:group:small("some_tag") {
+#button:primary("Left")
+#button:secondary("Middle")
+#button:success("Right")
+}
+
+<p>
+<pre>
+#raw(){
+#button:group:small("some_tag") {
+    #button:primary("Left")
+    #button:secondary("Middle")
+    #button:success("Right")
+}
+}
+</pre>
+</p>
+
+<br>
+<b> Button Group Vertical:</b>
+<br>
+#raw(){
+Usage: <pre>#button:group:vertical(&lt;aria-label&gt;){}</pre>
+}
+<hr>
+
+#button:group:vertical() {
+#button:primary("Top")
+#button:secondary("Middle")
+#button:success("Bottom")
+}
+
+<p>
+<pre>
+#raw(){
+#button:group:vertical() {
+    #button:primary("Top")
+    #button:secondary("Middle")
+    #button:success("Bottom")
+}
+}
+</pre>
+</p>
+
+
+<br>
+<b> Button Group Vertical Large:</b>
+<br>
+#raw(){
+Usage: <pre>#button:group:vertical:large(&lt;aria-label&gt;){}</pre>
+}
+<hr>
+
+#button:group:vertical:large() {
+#button:primary("Top")
+#button:secondary("Middle")
+#button:success("Bottom")
+}
+
+<p>
+<pre>
+#raw(){
+#button:group:vertical:large() {
+    #button:primary("Top")
+    #button:secondary("Middle")
+    #button:success("Bottom")
+}
+}
+</pre>
+</p>
+
+<br>
+<b> Button Group Vertical Small:</b>
+<br>
+#raw(){
+Usage: <pre>#button:group:vertical:small(&lt;aria-label&gt;){}</pre>
+}
+<hr>
+
+#button:group:vertical:small() {
+#button:primary("Top")
+#button:secondary("Middle")
+#button:success("Bottom")
+}
+
+<p>
+<pre>
+#raw(){
+#button:group:vertical:small() {
+    #button:primary("Top")
+    #button:secondary("Middle")
+    #button:success("Bottom")
+}
+}
+</pre>
+</p>
+
+
+
+
+}
