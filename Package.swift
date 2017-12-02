@@ -1,28 +1,22 @@
-// swift-tools-version:4.0
-
 import PackageDescription
 
 let package = Package(
-    name: "bootstrapProviderExample",
-    products: [
-        .library(name: "App", targets: ["App"]),
-        .executable(name: "Run", targets: ["Run"])
-    ],
-    dependencies: [
-        .package(url: "https://github.com/vapor/vapor.git", .upToNextMajor(from: "2.2.0")),
-        .package(url: "https://github.com/vapor/leaf-provider.git", .upToNextMajor(from: "1.1.0")),
-        .package(url: "https://github.com/khoogheem/BootstrapProvider", from: "0.5.0"),
-    ],
+    name: "BootstrapProviderExample",
     targets: [
-        .target(name: "App", dependencies: ["Vapor", "LeafProvider", "BootstrapProvider"],
-               exclude: [
-                   "Config",
-                   "Database",
-                   "Public",
-                   "Resources"
-               ]),
-        .target(name: "Run", dependencies: ["App"]),
-        .testTarget(name: "AppTests", dependencies: ["App", "Testing"])
-    ]
-)
+        Target(name: "App"),
+        Target(name: "Run", dependencies: ["App"]),
+        ],
+    dependencies: [
+        .Package(url: "https://github.com/vapor/vapor.git", majorVersion: 2),
+        .Package(url: "https://github.com/vapor/leaf-provider.git", majorVersion: 1),
+        .Package(url: "/Users/kevinh/Developer/GitHub/bootstrapProvider", majorVersion: 0),
 
+        ],
+    exclude: [
+        "Config",
+        "Database",
+        "Localization",
+        "Public",
+        "Resources",
+        ]
+)

@@ -9,7 +9,39 @@
         #row() {
         <h1>Bootstrap Provider Examples</h1>
         }
+
+    Vapor Provider for Bootstrap Leaf Tags.
+    <hr>
+
+    <h3>Setup</h3>
+    <b>Vapor 2:</b>
+    <p>
+    In your Config+Setup.swit file where you setup your providers you will need to add:
+    <br>
+    <code>
+    try addProvider(BootstrapProvider.Provider.self)
+    </code>
+    </p>
+
+    <p>
+    If you don't want all of the Tags you can add your own in Droplet+Setup.swift:
+    <code><pre>
+    if let leaf = self.view as? LeafRenderer {
+        leaf.stem.register(Button(size: .standard, color: .primary))
+        leaf.stem.register(Button(size: .large, color: .primary))
+        leaf.stem.register(Button(size: .standard, color: .dark))
+    }
+    </code></pre>
+    </p>
+
+    <p>
+    <br>
+    <h3>License</h3>
+    BootstrapProvider is available under the MIT license. See the LICENSE file for more info.
+
     }
 
+
+<p>
 }
 
